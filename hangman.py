@@ -169,7 +169,7 @@ guessed_word = list(word_selected_dashed)
 
 while chances > 0:
     if ''.join(guessed_word) == random_word:
-        print("Congraluations, you have gussed the correct word")
+        print("Congraluations, you have guessed the correct word")
         break
 
     print('You have got '+ str(chances)+ ' wrong chances ')
