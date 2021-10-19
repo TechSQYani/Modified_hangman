@@ -82,7 +82,7 @@ while True:
       RowSelect = RowSelect[-1:] + RowSelect[:-1]
       
       #Increment count1
-      i+1
+      i=i+1
 
 #PINs final cleaning on interrupt
   except KeyboardInterrupt:
