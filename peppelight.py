@@ -71,12 +71,18 @@ while True:
   try:
     RowSelect=[1,0,0,0,0,0,0,0]
 
- for i in range(0,8): # last value in range is not included by default
+ count1=[1,2,3,4,5,6,7,8]    
+ #for i in range(0,8):   
+    
+ for i in count1: # last value in range is not included by default
       # send row data and row selection to registers
       shift_update_matrix(''.join(map(str, display_hangman[i])),columnDataPin,\
                           ''.join(map(str, RowSelect)),rowDataPin,clockPIN,latchPIN)
       #shift row selector
       RowSelect = RowSelect[-1:] + RowSelect[:-1]
+      
+      #Increment count1
+      i+1
 
 #PINs final cleaning on interrupt
   except KeyboardInterrupt:
