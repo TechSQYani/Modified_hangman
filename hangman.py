@@ -3,6 +3,7 @@
 # Lighting functionality written by peppe8o
 #Modified 10/19/2021
 import random
+import peppelight.py as pep
 
 #comment out the original way to display hangman
 #def display_hangman(attempts):
@@ -139,6 +140,7 @@ def display_hangman(attempts):
        ["11101011"]
        ["11011101"]]
             ]
+       return stages[attempts]
 
 
 #extract random word from the text file
