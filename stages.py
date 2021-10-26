@@ -1,4 +1,6 @@
 from sense_hat import SenseHat
+import time
+
 sense = SenseHat()
 
 sense.set_rotation(90)
@@ -77,21 +79,23 @@ O, O, X, O, X, O, O, O
 
 #Display each hangman state, with a two second delay between each.
 sense.set_pixels(head)
-time.sleep(2)
+time.sleep(1)
 
 sense.set_pixels(torso)
-time.sleep(2)
+time.sleep(1)
 
 sense.set_pixels(arm1)
-time.sleep(2)
+time.sleep(1)
 
 sense.set_pixels(arm2)
-time.sleep(2)
+time.sleep(1)
 
 sense.set_pixels(leg1)
-time.sleep(2)
+time.sleep(1)
 
 sense.set_pixels(leg2)
-time.sleep(2)
+time.sleep(1)
+
+sense.show_message(" ")
 
 quit()
